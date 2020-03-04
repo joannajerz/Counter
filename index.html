@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Countdown Timer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <div class="timer__controls">
+        <button data-time="10" class="timer_10">10 second</button>
+        <button data-time="20" class="timer_20">20 second</button>
+        <button data-time="30" class="timer_30">30 second</button>
+        <button data-time="40" class="timer_40">40 second</button>
+        <button data-time="50" class="timer_50">50 second</button>
+        <button data-time="60" class="timer_60">60 second</button>
+        <
+        <!-- 
+          Create Buttons for different time periods like:
+          <button data-time="20" class="timer__button">20 Secs</button> 
+        -->
+        <form name="customForm" id="custom">
+          <!-- add "input" elemenet for entering minutes -->
+          <input
+            placeholder="Wpisz czas"
+            class="time_input"
+            name="time_input"
+            type="text"
+          />
+        </form>
+      </div>
+      <div class="display">
+        <h1 class="display__time-left"></h1>
+        <p class="display__end-time"></p>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
